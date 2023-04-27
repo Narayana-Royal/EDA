@@ -19,7 +19,7 @@ against various products of different categories.They have shared purchase summa
 
 **3. APPROACH USED to solve the Problem**: 
 
-**As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.**
+* *As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.* *
 
 > Cleaning of data is done by dropping unnecessary columns
 
