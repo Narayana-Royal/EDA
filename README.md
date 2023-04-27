@@ -10,16 +10,16 @@
 4. Explanation along with the Code 
 5. Results with Screenshots
 
-### 1. PROBLEM STATEMENT: 
+**1. PROBLEM STATEMENT**: 
 > A retail company "ABC Private Limited" wants to understand the customer purchase behaviour (specifically, purchase amount)
 against various products of different categories.They have shared purchase summary of various customers for selected high volume products from last month, The dataset also contains customer demographics (age, gender, marital status, city_type, stay_in_current_city), product details (produck_ id and product category) and Total purchase_amount from last month. Now, they want to build a model which it is done after the cleaning in order to predict the purchase amount of customer against products which will help them to create personalized offer for customers against different products.
 
-### 2. DATASET: 
+**2. DATASET**: 
 > https://www.kaggle.com/datasets/sdolezel/black-friday?select=test.csv (Downloaded the zip file which has both train and test data files separately)
 
 **3. APPROACH USED to solve the Problem**: 
 
-### As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.
+**As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.**
 
 > Cleaning of data is done by dropping unnecessary columns
 
