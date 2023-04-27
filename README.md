@@ -1,8 +1,8 @@
 # EDA
 
-##Exploratory Data Analysis on various Datasets
+## Exploratory Data Analysis on various Datasets
 
-##Table of Contents
+## Table of Contents
 
 1. Problem Statement
 2. Dataset
