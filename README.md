@@ -5,7 +5,7 @@
 ## Table of Contents
 
 1. Problem Statement
-2. Dataset
+2. Dataset along with features .
 3. Approach Used to solve the Problem
 4. Explanation along with the Code 
 5. Results with Screenshots
