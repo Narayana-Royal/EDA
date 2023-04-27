@@ -3,15 +3,15 @@ Exploratory Data Analysis on various Datasets
 
 TABLE OF CONTENTS
 
-1. Problem Statement
+. Problem Statement
 
-2. Dataset
+. Dataset
 
-3. Approach Used to solve the Problem
+. Approach Used to solve the Problem
 
-4. Explanation along with the Code
+. Explanation along with the Code
 
-5. Results with Screenshots
+. Results with Screenshots
 
 
 
@@ -26,39 +26,39 @@ against various products of different categories.They have shared purchase summa
 3. Approach Used to solve the Problem: 
 
 As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.
-1 Data Cleaning by dropping unnecessary columns
+. Data Cleaning by dropping unnecessary columns
 
-2 Changing categorical values of columns to numericals using various techniques
+. Changing categorical values of columns to numericals using various techniques
 
-3 Filling the missing values of each columns using different methods
+. Filling the missing values of each columns using different methods
 
-4 Visualising the cleaned data to extract insights/Observations
+. Visualising the cleaned data to extract insights/Observations
 
-5 Finalled scaled the cleaned data as training and test in order to build the model for prediction
+. Finalled scaled the cleaned data as training and test in order to build the model for prediction
 
 
 4. Explanation along with the Code:
 
-1 Importing the necessary libraries to perform dataset operations which are numpy,pandas,matplotlib,seaborn
+. Importing the necessary libraries to perform dataset operations which are numpy,pandas,matplotlib,seaborn
 
-2 Reading the data of both train.csv and test.csv files using pandas read method
+. Reading the data of both train.csv and test.csv files using pandas read method
 
-3 checking the general information of data by using methods called info(),describe()
+. checking the general information of data by using methods called info(),describe()
 
-4 Dropping the unnecessary column by drop method
+. Dropping the unnecessary column by drop method
 
-5 Changing categorical values of each column to numerical by mapping function
+. Changing categorical values of each column to numerical by mapping function
 
-6 Filling the missing values by using mode statistical operation(which is efficient one !)
+. Filling the missing values by using mode statistical operation(which is efficient one !)
 
-7 Changing all column datatypes to int using astype() method
+. Changing all column datatypes to int using astype() method
 
-8 Visualising the cleaned data by using seaborn library and plotting the graphs (i.e barplot) and extracting the insight (as in our dataset
+. Visualising the cleaned data by using seaborn library and plotting the graphs (i.e barplot) and extracting the insight (as in our dataset
   it shows product_category1 has high number of purchases. This can be seen by using graphs)
   
-9 Scaling the features into train and test . Approach used here is that the rows(null values of target column)  are splitted into test data.
+. Scaling the features into train and test . Approach used here is that the rows(null values of target column)  are splitted into test data.
 
-10 Now it is ready to train the model after using train_test_split fucntion from sklearn
+. Now it is ready to train the model after using train_test_split fucntion from sklearn
 
 
 5. Results with Screenshots: 
