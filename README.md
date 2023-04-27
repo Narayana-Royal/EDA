@@ -19,7 +19,7 @@ against various products of different categories.They have shared purchase summa
 
 **3. APPROACH USED to solve the Problem**: 
 
-* *As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.* *
+* *As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.* 
 
 > Cleaning of data is done by dropping unnecessary columns
 
@@ -74,7 +74,7 @@ against various products of different categories.They have shared purchase summa
 
 > Reading data
 
-<img width="650" alt="Screenshot 2023-04-27 at 2 04 42 PM" src="https://user-images.githubusercontent.com/88378136/234806998-1fa8031a-4609-4972-9444-6fcfbf01fe15.png">
+<img width="650" media="(prefers-color-scheme: dark)" alt="Screenshot 2023-04-27 at 2 04 42 PM" src="https://user-images.githubusercontent.com/88378136/234806998-1fa8031a-4609-4972-9444-6fcfbf01fe15.png">
 
 > Changing categorical values to numerical
 
