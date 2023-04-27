@@ -17,7 +17,7 @@ against various products of different categories.They have shared purchase summa
 **2. DATASET**: 
 > https://www.kaggle.com/datasets/sdolezel/black-friday?select=test.csv (Downloaded the zip file which has both train and test data files separately)
 
-> Features: Product_ID, Gender Age, Occupation, City_Category, Stay_In_Current_City_Years, Marital_Status, Product_Category_1, Product_Category_2,    Product_Category_3, Purchase
+> Features: UserID, Product_ID, Gender Age, Occupation, City_Category, Stay_In_Current_City_Years, Marital_Status, Product_Category_1, Product_Category_2,    Product_Category_3, Purchase
 
 **3. APPROACH USED to solve the Problem**: 
 
