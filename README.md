@@ -1,4 +1,4 @@
-# Black Friday Sales: EDA
+# Black Friday Sales : EDA
 
 ## Exploratory Data Analysis on various Datasets
 
