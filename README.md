@@ -75,6 +75,8 @@ against various products of different categories.They have shared purchase summa
 > Reading data
 
 <img width="750" alt="Screenshot 2023-04-27 at 2 04 42 PM" src="https://user-images.githubusercontent.com/88378136/234806998-1fa8031a-4609-4972-9444-6fcfbf01fe15.png">
+<source srcset="[dark-mode.png](https://user-images.githubusercontent.com/88378136/234806998-1fa8031a-4609-4972-9444-6fcfbf01fe15.png)" media="(prefers-color-scheme: dark)">
+
 
 > Changing categorical values to numerical
 
