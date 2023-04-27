@@ -42,24 +42,24 @@ against various products of different categories.They have shared purchase summa
 
 > Importing the necessary libraries to perform dataset operations which are numpy,pandas,matplotlib,seaborn
 
-> Reading the data of both train.csv and test.csv files using pandas read method
+> Reading the data of both train.csv and test.csv files using PANDAS READ method
 
-> checking the general information of data by using methods called info(),describe()
+> checking the general information of data by using methods called INFO(),DESCRIBE()
 
-> Dropping the unnecessary column by drop method
+> Dropping the unnecessary column by DROP method
 
-> Changing categorical values of each column to numerical by mapping function
+> Changing categorical values of each column to numerical by MAPping function
 
-> Filling the missing values by using mode statistical operation(which is efficient one !)
+> Filling the missing values by using MODE statistical operation(which is efficient one !)
 
-> Changing all column datatypes to int using astype() method
+> Changing all column datatypes to int using ASTYPE() method
 
-> Visualising the cleaned data by using seaborn library and plotting the graphs (i.e barplot) and extracting the insight (as in our dataset
-  it shows product_category1 has high number of purchases. This can be seen by using graphs)
+> Visualising the cleaned data by using seaborn library and plotting the graphs (i.e BARPLOT) and extracting the insight (as in our dataset
+  it shows PRODUCT_CATEGORY1 has high number of purchases. This can be seen by using graphs)
   
-> Scaling the features into train and test . Approach used here is that the rows(null values of target column)  are splitted into test data.
+> Scaling the features into train and test. Approach used here is that the rows(null values of target column)  are splitted into test data.
 
-> Now it is ready to train the model after using train_test_split fucntion from sklearn
+> Now it is ready to train the model after using TRAIN_TEST_SPLIT function from sklearn
 
 
 
