@@ -1,20 +1,13 @@
 # EDA
 Exploratory Data Analysis on various Datasets
 
-TABLE OF CONTENTS
+Table of Contents
 
-. Problem Statement
-
-. Dataset
-
-. Approach Used to solve the Problem
-
-. Explanation along with the Code
-
-. Results with Screenshots
-
-
-
+1. Problem Statement
+2. Dataset
+3. Approach Used to solve the Problem
+4. Explanation along with the Code 
+5. Results with Screenshots
 
 
 
