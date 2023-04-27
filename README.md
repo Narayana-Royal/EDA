@@ -20,15 +20,15 @@ https://www.kaggle.com/datasets/sdolezel/black-friday?select=test.csv (Downloade
 **3. APPROACH USED to solve the Problem**: 
 
 As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.
-. Data Cleaning by dropping unnecessary columns
+> Data Cleaning by dropping unnecessary columns
 
-. Changing categorical values of columns to numericals using various techniques
+> Changing categorical values of columns to numericals using various techniques
 
-. Filling the missing values of each columns using different methods
+> Filling the missing values of each columns using different methods
 
-. Visualising the cleaned data to extract insights/Observations
+> Visualising the cleaned data to extract insights/Observations
 
-. Finalled scaled the cleaned data as training and test in order to build the model for prediction
+> Finalled scaled the cleaned data as training and test in order to build the model for prediction
 
 
 
@@ -39,26 +39,26 @@ As our problem statement shows that we have to do the data cleaning and feature 
 
 **4. Explanation along with the Code**:
 
-. Importing the necessary libraries to perform dataset operations which are numpy,pandas,matplotlib,seaborn
+> Importing the necessary libraries to perform dataset operations which are numpy,pandas,matplotlib,seaborn
 
-. Reading the data of both train.csv and test.csv files using pandas read method
+> Reading the data of both train.csv and test.csv files using pandas read method
 
-. checking the general information of data by using methods called info(),describe()
+> checking the general information of data by using methods called info(),describe()
 
-. Dropping the unnecessary column by drop method
+> Dropping the unnecessary column by drop method
 
-. Changing categorical values of each column to numerical by mapping function
+> Changing categorical values of each column to numerical by mapping function
 
-. Filling the missing values by using mode statistical operation(which is efficient one !)
+> Filling the missing values by using mode statistical operation(which is efficient one !)
 
-. Changing all column datatypes to int using astype() method
+> Changing all column datatypes to int using astype() method
 
-. Visualising the cleaned data by using seaborn library and plotting the graphs (i.e barplot) and extracting the insight (as in our dataset
+> Visualising the cleaned data by using seaborn library and plotting the graphs (i.e barplot) and extracting the insight (as in our dataset
   it shows product_category1 has high number of purchases. This can be seen by using graphs)
   
-. Scaling the features into train and test . Approach used here is that the rows(null values of target column)  are splitted into test data.
+> Scaling the features into train and test . Approach used here is that the rows(null values of target column)  are splitted into test data.
 
-. Now it is ready to train the model after using train_test_split fucntion from sklearn
+> Now it is ready to train the model after using train_test_split fucntion from sklearn
 
 
 
