@@ -90,7 +90,7 @@ against various products of different categories.They have shared purchase summa
 
 <img width="750" alt="Screenshot 2023-04-27 at 2 05 26 PM" src="https://user-images.githubusercontent.com/88378136/234808180-87388a88-acd7-49e7-b683-bdb2970cd157.png">
 
-> 5. Finally!!! Feature scaling is done! (Now the data is ready to perform training of the model)
+> 5. Finally!!! Feature scaling is done! (Now the data is ready to perform in training of the model)
 
 <img width="750" alt="Screenshot 2023-04-27 at 2 05 41 PM" src="https://user-images.githubusercontent.com/88378136/234808228-eefaf084-9cb9-4759-a702-36a6a11fe9fa.png">
 
