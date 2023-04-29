@@ -1,4 +1,4 @@
-# Black Friday Sales : EDA 1
+# Black Friday Sales : EDA 2
 
 ## Exploratory Data Analysis on various Datasets
 
@@ -11,27 +11,26 @@
 5. Results with Screenshots
 
 **1. PROBLEM STATEMENT**: 
-> A retail company "ABC Private Limited" wants to understand the customer purchase behaviour (specifically, purchase amount)
-against various products of different categories.They have shared purchase summary of various customers for selected high volume products from last month, The dataset also contains customer demographics (age, gender, marital status, city_type, stay_in_current_city), product details (produck_ id and product category) and Total purchase_amount from last month. Now, they want to build a model which it is done after the cleaning in order to predict the purchase amount of customer against products which will help them to create personalized offer for customers against different products.
+> ABC Company records all the Passengers details who are traveling from one place to another by the mode of flight transport. They use different airlines in order to fly.All the airlines are given and passenger details like date of journey , from where they are traveling which is basically the source , the destination. The route they followed. Departure time and Arrival time, Duration and rest other details. So,ABC Comapny wants to make predictions of price for each individual. So to make this happen, The company requires data to be cleaned and make it ready for fitting in a model that can predict the price.
 
 **2. DATASET**: 
-> https://www.kaggle.com/datasets/sdolezel/black-friday?select=test.csv (Downloaded the zip file which has both train and test data files separately)
+> https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh (Downloaded the zip file which has both train and test data files separately)
 
-> Features: UserID, Product_ID, Gender Age, Occupation, City_Category, Stay_In_Current_City_Years, Marital_Status, Product_Category_1, Product_Category_2,    Product_Category_3, Purchase
+> Features: Airline, Date_of_Journey,	Source,	Destination,	Route	Dep_Time,	Arrival_Time,	Duration,	Total_Stops,	Additional_Info,	Price
 
 **3. APPROACH USED to solve the Problem**: 
 
-* *As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.* 
+* *As our problem statement shows that we have to do the feature engineering for this dataset.The following steps are done to achieve this.* 
 
-> Cleaning of data is done by dropping unnecessary columns
+> Cleaning of data is done by changing categorical values to numerical
 
-> Changing categorical values of columns to numericals using various techniques
+> Using various techniques such as STRING.SPLIT() to split the column cells values and making new column by concatenating to the previous one.
 
-> Filling the missing values of each columns using different methods
+> Using the mapping function(.MAP({"COLUMN1_CellVALUES":INTEGER})) to map the values of categorical values to numerical integers.
 
-> Visualising the cleaned data to extract insights/Observations
+> Using the LABELENCODER function from sklearn library to change categorical cell values to numerical.
 
-> Finalled scaled the cleaned data as training and test in order to build the model for prediction
+> Finally changing the datatypes of all the column transformed values to integer or float for the model to better understand the datatype.
 
 
 
@@ -44,24 +43,23 @@ against various products of different categories.They have shared purchase summa
 
 > Importing the necessary libraries to perform dataset operations which are numpy,pandas,matplotlib,seaborn
 
-> Reading the data of both train.csv and test.csv files using PANDAS READ method
+> Reading the data of both train.csv and test.csv files using PANDAS READ method and CONCAT both the test data and test data as single dataframe.
 
 > checking the general information of data by using methods called INFO(),DESCRIBE()
 
-> Dropping the unnecessary column by DROP method
+> Using string split function(STR.SPLIT("")) to split the data and add it in a column and concatenate this column to the main dataframe. Column values which are used to split are Date_of_Journey.
 
-> Changing categorical values of each column to numerical by MAPping function
+> Applying the same string split function to the next columns which are Arrival Time, Dept Time, Duration.
 
-> Filling the missing values by using MODE statistical operation(which is efficient one !)
+> Changing the datatypes of column values using (.ASTYPE()) function.
 
-> Changing all column datatypes to int using ASTYPE() method
+> After adding the new columns which are created from the spliiting of data columns. We drop the original column(by using DROP("COLUMN1",AXIS=1))     after splitting. Columns where this drop function applied are Date_of_Journey, Arrival Time, Dept Time, Duration.
 
-> Visualising the cleaned data by using seaborn library and plotting the graphs (i.e BARPLOT) and extracting the insight (as in our dataset
-  it shows PRODUCT_CATEGORY1 has high number of purchases. This can be seen by using graphs)
+> Using the map function (.MAP({"COLUMN1_CellVALUES":INTEGER})) in column Total_Stops.
   
-> Scaling the features into train and test. Approach used here is that the rows(null values of target column)  are splitted into test data.
+> LABELENCODER is used to assign integer values to the categorical oness. Columns where this drop function applied are 	Airline,	Source,	Destination,	Additional_Info.
 
-> Now it is ready to train the model after using TRAIN_TEST_SPLIT function from sklearn
+> Now it is ready to train the model.
 
 
 
@@ -76,22 +74,19 @@ against various products of different categories.They have shared purchase summa
 
 > 1. Reading data
 
-<img width="750" alt="Screenshot 2023-04-27 at 2 04 42 PM" src="https://user-images.githubusercontent.com/88378136/234806998-1fa8031a-4609-4972-9444-6fcfbf01fe15.png">
+<img width="1201" alt="Screenshot 2023-04-29 at 1 03 13 PM" src="https://user-images.githubusercontent.com/88378136/235290128-bacc6085-32f6-4c49-97f0-0aa2e068b00d.png">
 
-> 2. Changing categorical values to numerical
+> 2. Changing categorical values to numerical using string split
 
-<img width="750" alt="Screenshot 2023-04-27 at 2 04 59 PM" src="https://user-images.githubusercontent.com/88378136/234807868-0b9abf87-10be-43f4-8c90-aeb4ec06dedb.png">
+<img width="1201" alt="Screenshot 2023-04-29 at 1 03 34 PM" src="https://user-images.githubusercontent.com/88378136/235290137-65fc1d10-b0c8-4c71-9277-ef7fe97f9fb3.png">
 
-> 3. Filling the missing values
+> 3. Changing categorical values to numerical using map function
 
-<img width="750" alt="Screenshot 2023-04-27 at 2 05 11 PM" src="https://user-images.githubusercontent.com/88378136/234808025-0c42e356-a47f-4306-b6d8-3f5ba35af585.png">
+<img width="1201" alt="Screenshot 2023-04-29 at 1 04 14 PM" src="https://user-images.githubusercontent.com/88378136/235290146-f070370c-d6bf-4a57-9634-7dd18c7fe5f6.png">
 
-> 4. Visualising the graphs of cleaned data to extract insight
+> 4. Changing categorical values to numerical using LabelENCODER.
 
-<img width="750" alt="Screenshot 2023-04-27 at 2 05 26 PM" src="https://user-images.githubusercontent.com/88378136/234808180-87388a88-acd7-49e7-b683-bdb2970cd157.png">
+<img width="1201" alt="Screenshot 2023-04-29 at 1 04 33 PM" src="https://user-images.githubusercontent.com/88378136/235290153-fa48efbb-ea32-4dd1-b324-eab4eed474cb.png">
 
-> 5. Finally!!! Feature scaling is done! (Now the data is ready to perform in training of the model)
-
-<img width="750" alt="Screenshot 2023-04-27 at 2 05 41 PM" src="https://user-images.githubusercontent.com/88378136/234808228-eefaf084-9cb9-4759-a702-36a6a11fe9fa.png">
 
 
