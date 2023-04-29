@@ -1,4 +1,4 @@
-# Black Friday Sales : EDA 2
+# Flight Price Prediction : EDA 2
 
 ## Exploratory Data Analysis on various Datasets
 
