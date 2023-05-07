@@ -2,8 +2,6 @@
 
 ## Exploratory Data Analysis on various Datasets
 
-## Table of Contents
-
 **All the visualisations and drawing conclusions are done in this dataset.**
 > 1. Null values are visualised using heatmap
 > 2. Single column(i.e Country) distribution of data is visualised using piechart 
